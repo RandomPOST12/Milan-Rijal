@@ -1,0 +1,127 @@
+
+body{
+    overflow-x: hidden;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+nav{
+    align-items: center;
+    overflow-y: hidden;
+    transition: .2s ease-in-out;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+
+nav ul li{
+    margin:0 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--white) !important;
+}
+
+nav ul li a{
+    color: var(--white) !important;
+}
+nav ul li a:hover{
+
+    color: rgb(190, 11, 11);
+
+}
+.active{
+
+    color: rgb(190, 11, 11);
+
+}
+
+.off{
+    font-size: 2rem;
+    display: none;
+}
+
+.h-menu{
+    height: 50vh;
+}
+
+main{
+    padding: 5rem 20rem;
+}
+
+.write{
+    margin-top: 1rem;
+}
+
+.part{
+    margin-bottom: 1.5rem;
+}
+
+pre{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+h1{
+    font-size: 3rem !important;
+}
+
+@media only screen and (max-width: 750px) {
+
+    nav{
+        flex-direction: column;
+        height: 70px;
+    }
+    ul{
+        flex-direction: column;
+    }
+
+    .off{
+        display: block;
+    }
+
+    .menu-top{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    nav ul li{
+        margin:1.2rem 0;
+        color: white;
+    }
+
+
+    nav{
+        background-color: white;
+         position: absolute;
+         width: 100%;
+         z-index: 100;
+    }
+    main{
+        padding: 5rem 2rem;
+        width: 95%;
+    }
+    pre{
+        width: 100%;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        font-size: 1.3rem;
+    }
+    h1{
+        font-size: 2.8rem !important;
+    }
+
+    .write{
+        margin-top: 5rem;
+    }
+    nav ul li a{
+        color: var(--white) !important;
+    }
+
+    nav{
+        background-color: var(--primary-color);
+        color: var(--white);
+    }
+}
