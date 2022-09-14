@@ -41,8 +41,8 @@ i{
 }
 
 .link{
-    text-decoration: none;
-    -webkit-text-decoration-line: none;
+    text-decoration: none !important;
+    -webkit-text-decoration-line: none !important;
     color: black;
 }
 ul{
